@@ -12,7 +12,10 @@ int main()
     // initialize stringstream with date_str
     std::istringstream ss(date_str);
     // call get_time function to get current time and store it in the date object
-    ss >> std::get_time(&date_obj, "%Y-%m-%d %H:%M:%S");
+    
+    // get_time() causing crash
+    ss >> std::get_time(date_obj, "%Y-%m-%d %H:%M:%S");
+    
     // create formatted date stringstream
     std::stringstream formatted_date_ss;
     // insert formatted date into stringstream variable
