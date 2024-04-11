@@ -1,4 +1,4 @@
-bugs introduced + MS
+# bugs introduced + MS
 def remove_duplicates(arr):
     # Sorts given array
     arr.sort()
