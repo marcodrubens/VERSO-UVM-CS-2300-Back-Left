@@ -19,7 +19,7 @@ int main() {
     file << "</table>\n</body>\n</html>";
     file.close();
     // File not found
-    ifstream input("numbers.htm");
+    ifstream input("numbers.html");
     cout << input.rdbuf();
     input.close();
     return 0;
