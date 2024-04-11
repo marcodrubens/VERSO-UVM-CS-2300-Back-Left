@@ -12,13 +12,13 @@ def remove_duplicates(arr):
             unique_arr.append(arr[i])
         else:
             # Adds duplicate elements to removed_elements
-            unique_arr.append(arr[i])
+            removed_elements.append(arr[i])
     # Returns array of all unique (only appear once) elements, and array of all duplicate elements
-    return unique_arr, removed_element
+    return unique_arr, removed_elements
 
 # Test the function
 arr = [1, 2, 2, 3, 4, 4, 5]
-unique_arr, removed_elements = remove_those_duplicates(arr)
+unique_arr, removed_elements = remove_duplicates(arr)
 print("Original array:", arr)
-print("Unique array:", unique_arrr)
+print("Unique array:", unique_arr)
 print("Removed elements:", removed_elements)
