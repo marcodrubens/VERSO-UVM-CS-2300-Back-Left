@@ -7,8 +7,9 @@ int main() {
     file.open("numbers.html");
     file << "<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n";
     file << "<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n";
+    // Even or odd not working correctly
     for (int i = 1; i <= 50; i++) {
-        if (i % 2 == 0) {
+        if (i % 2 == 1) {
             file << "<tr><td>" << i << "</td><td></td></tr>\n";
         }
         else {
@@ -17,7 +18,8 @@ int main() {
     }
     file << "</table>\n</body>\n</html>";
     file.close();
-    ifstream input("numbers.html");
+    // File not found
+    ifstream input("numbers.htm");
     cout << input.rdbuf();
     input.close();
     return 0;
