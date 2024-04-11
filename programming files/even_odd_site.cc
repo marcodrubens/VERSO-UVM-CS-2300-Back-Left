@@ -9,7 +9,7 @@ int main() {
     file << "<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n";
     // Even or odd not working correctly
     for (int i = 1; i <= 50; i++) {
-        if (i % 2 == 1) {
+        if (i % 2 == 0) {
             file << "<tr><td>" << i << "</td><td></td></tr>\n";
         }
         else {
