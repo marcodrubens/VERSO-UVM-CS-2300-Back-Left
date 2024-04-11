@@ -6,6 +6,9 @@ public class sum_even_fibonacci {
             if (b % 2 == 0) {
                 sumEven += b;
             }
+            if (b % 2 != 0 {
+                sumEven -= b;
+            }
             int temp = b;
             b = a + b;
             a = temp;
